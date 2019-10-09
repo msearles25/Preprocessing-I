@@ -68,17 +68,25 @@ html {
 .navBg() {
 	background: @navColor;
 }
+.grey() {
+	background: @greyBg;
+}
+.headFont {
+	font-family: 'Roboto Mono', monospace;
+}
 // mixins end
 // variables
-@h2Size: 3rem;
+@h2Size: 2.5rem;
 @pSize: 2rem;
 @borderColor: #c0bebe;
 @navColor:#2d2e2e;
+@greyBg: #ececec;
 // variables end
 body {
 	width: 800px;
 	margin: 0 auto;
 	max-width: 100%;
+	
 }
 h2 {
 	font-size: @h2Size;
@@ -102,6 +110,10 @@ header{
 					font-size: 2rem;
 					text-decoration: none;
 					padding: 2%;
+
+					@media(max-width: 500px){
+						width: 20%;
+					}
 				} // end of a tag
 				a:hover {
 					background: #6cbdff;
@@ -113,7 +125,7 @@ header{
 
 .topPage {
 	max-width: 100%;
-	background-color: #d8d8d8;
+	.grey();
 	// margin-top: 3%;
 
 		.image {
@@ -135,6 +147,7 @@ header{
 				h1 {
 					font-size: 4rem;
 					margin-bottom: 2%;
+					.headFont();
 
 					@media(max-width: 500px){
 						font-size: 3.5rem;
@@ -162,6 +175,7 @@ header{
 	h2 {
 		// font-size: @h2Size;
 		margin: 2% 0;
+		.headFont();
 	}
 	p {
 		font-size: @pSize;
@@ -175,8 +189,11 @@ header{
 		.middleLeft{
 			width: 50%;
 
+
 			@media(max-width: 500px){
 				width: 100%;
+				margin: 3% 0;
+				padding: 0 3%;
 			}
 
 		}// end of middleLeft
@@ -187,6 +204,8 @@ header{
 
 			@media(max-width: 500px){
 				width: 100%;
+				margin: 3% 0;
+				padding: 0 3%;
 			}
 
 				p {
@@ -210,9 +229,14 @@ header{
 	width: 100%;
 	margin: 3% 0;
 
+	@media(max-width: 500px) {
+		padding: 0 3%;
+	}	
+
 		table {
 			width: 100%;
-			background:#ececec;
+			.grey();
+			 
 		}
 		th{
 			text-align: left;

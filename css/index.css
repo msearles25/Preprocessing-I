@@ -137,13 +137,16 @@ body {
 html {
   font-size: 62.5%;
 }
+.headFont {
+  font-family: 'Roboto Mono', monospace;
+}
 body {
   width: 800px;
   margin: 0 auto;
   max-width: 100%;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 header {
   display: flex;
@@ -163,12 +166,17 @@ header nav a {
   text-decoration: none;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  header nav a {
+    width: 20%;
+  }
+}
 header nav a:hover {
   background: #6cbdff;
 }
 .topPage {
   max-width: 100%;
-  background-color: #d8d8d8;
+  background: #ececec;
 }
 .topPage .image {
   text-align: center;
@@ -189,6 +197,7 @@ header nav a:hover {
 .topPage .topMain h1 {
   font-size: 4rem;
   margin-bottom: 2%;
+  font-family: 'Roboto Mono', monospace;
 }
 @media (max-width: 500px) {
   .topPage .topMain h1 {
@@ -196,12 +205,12 @@ header nav a:hover {
   }
 }
 .topPage .topMain p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 2%;
 }
 @media (max-width: 500px) {
   .topPage .topMain p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .middlePage {
@@ -210,6 +219,7 @@ header nav a:hover {
 }
 .middlePage h2 {
   margin: 2% 0;
+  font-family: 'Roboto Mono', monospace;
 }
 .middlePage p {
   font-size: 2rem;
@@ -226,6 +236,8 @@ header nav a:hover {
 @media (max-width: 500px) {
   .middlePage .middleLeft {
     width: 100%;
+    margin: 3% 0;
+    padding: 0 3%;
   }
 }
 .middlePage .middleRight {
@@ -236,6 +248,8 @@ header nav a:hover {
 @media (max-width: 500px) {
   .middlePage .middleRight {
     width: 100%;
+    margin: 3% 0;
+    padding: 0 3%;
   }
 }
 .middlePage .middleRight p {
@@ -254,6 +268,11 @@ header nav a:hover {
 .botttomPage {
   width: 100%;
   margin: 3% 0;
+}
+@media (max-width: 500px) {
+  .botttomPage {
+    padding: 0 3%;
+  }
 }
 .botttomPage table {
   width: 100%;
