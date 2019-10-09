@@ -118,19 +118,35 @@ header{
 
 		.image {
 			text-align: center;
-			padding: 4%;
+			width: 100%;
+			padding: 4% 10%;
+			// padding: 4%;
+
+			@media (max-width: 500px) {
+				width: 100%;
+				padding: 5%;
+			}
 		} //.image end
 		.topMain {
 			width: 100%;
 			text-align: center;
-			padding-bottom: 3%;
-
+			padding-bottom: 1%;
+			
 				h1 {
 					font-size: 4rem;
 					margin-bottom: 2%;
+
+					@media(max-width: 500px){
+						font-size: 3.5rem;
+					}
 				} // h1 end
 				p {
 					font-size: @h2Size;
+					margin-bottom: 2%;
+					
+					@media(max-width: 500px){
+						font-size: @h2Size - .5rem;
+					}
 				}
 		}// .topMain end
 } // End of .topPage
@@ -151,14 +167,27 @@ header{
 		font-size: @pSize;
 	}
 
+	@media(max-width: 500px){
+		.flexIt();
+		flex-direction: column;
+				
+	}
 		.middleLeft{
 			width: 50%;
+
+			@media(max-width: 500px){
+				width: 100%;
+			}
 
 		}// end of middleLeft
 		.middleRight {
 			width: 45%;
 			.flexIt();
 			flex-direction: column;
+
+			@media(max-width: 500px){
+				width: 100%;
+			}
 
 				p {
 					padding: 1.7% 0 1.7% 3%;

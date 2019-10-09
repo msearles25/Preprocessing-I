@@ -172,19 +172,37 @@ header nav a:hover {
 }
 .topPage .image {
   text-align: center;
-  padding: 4%;
+  width: 100%;
+  padding: 4% 10%;
+}
+@media (max-width: 500px) {
+  .topPage .image {
+    width: 100%;
+    padding: 5%;
+  }
 }
 .topPage .topMain {
   width: 100%;
   text-align: center;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 .topPage .topMain h1 {
   font-size: 4rem;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .topPage .topMain h1 {
+    font-size: 3.5rem;
+  }
+}
 .topPage .topMain p {
   font-size: 3rem;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .topPage .topMain p {
+    font-size: 2.5rem;
+  }
 }
 .middlePage {
   display: flex;
@@ -196,13 +214,29 @@ header nav a:hover {
 .middlePage p {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .middlePage {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .middlePage .middleLeft {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .middlePage .middleLeft {
+    width: 100%;
+  }
 }
 .middlePage .middleRight {
   width: 45%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .middlePage .middleRight {
+    width: 100%;
+  }
 }
 .middlePage .middleRight p {
   padding: 1.7% 0 1.7% 3%;
