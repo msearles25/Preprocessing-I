@@ -61,17 +61,27 @@ html, body {
 html {
 	font-size: 62.5%;
 }
-
+// mixins
 .flexIt(){
 	display: flex;
 }
+.navBg() {
+	background: @navColor;
+}
+// mixins end
+// variables
 @h2Size: 3rem;
 @pSize: 2rem;
-
+@borderColor: #c0bebe;
+@navColor:#2d2e2e;
+// variables end
 body {
 	width: 800px;
 	margin: 0 auto;
 	max-width: 100%;
+}
+h2 {
+	font-size: @h2Size;
 }
 
 header{
@@ -79,22 +89,27 @@ header{
 	justify-content: center;
 
 		nav {
-			background: #2d2e2e;
 			width: 100%;
+			.navBg();
 	
 			.flexIt();
 			justify-content: space-around;
 
 				a{
+					width: 15%;
+					text-align: center;
 					color: white;
 					font-size: 2rem;
 					text-decoration: none;
-					padding: 2% 0;
+					padding: 2%;
 				} // end of a tag
+				a:hover {
+					background: #6cbdff;
+				}
 		} //end of nav tag
 } //end of header tag
 
-
+// top of page
 
 .topPage {
 	max-width: 100%;
@@ -120,14 +135,16 @@ header{
 		}// .topMain end
 } // End of .topPage
 
+// Middle of the page
+
 .middlePage {
-	border: 1px solid black;
+	// border: 1px solid black;
 
 	.flexIt();
 	justify-content: space-between;
 
 	h2 {
-		font-size: @h2Size;
+		// font-size: @h2Size;
 		margin: 2% 0;
 	}
 	p {
@@ -139,6 +156,54 @@ header{
 
 		}// end of middleLeft
 		.middleRight {
-			width: 50%;
+			width: 45%;
+			.flexIt();
+			flex-direction: column;
+
+				p {
+					padding: 1.7% 0 1.7% 3%;
+				}
+
+				.goodOne, .goodFive, .goodThree {
+					border: 1px solid @borderColor;
+				}
+				.goodTwo, .goodFour {
+					border-left: 1px solid @borderColor;
+					border-right: 1px solid  @borderColor;
+				}
 		}// end of middleRight
+} //end of .middlePage
+
+// Bottom of the page
+
+.botttomPage {
+	// border: 1px solid black;
+	width: 100%;
+	margin: 3% 0;
+
+		table {
+			width: 100%;
+			background:#ececec;
+		}
+		th{
+			text-align: left;
+		}
+		th, td {
+			font-size: @pSize;
+			border-collapse: collapse;
+			padding: 2% 2%;
+		}
+		tr:nth-child(odd){
+			background: #ffffff;
+		}
+}
+
+// footer
+
+footer {
+	font-size: @pSize;
+	text-align: center;
+	color: white;
+	.navBg();
+	padding: 3%;
 }
