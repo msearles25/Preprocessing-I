@@ -134,3 +134,65 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 800px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  background: #2d2e2e;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 2% 0;
+}
+.topPage {
+  max-width: 100%;
+  background-color: #d8d8d8;
+}
+.topPage .image {
+  text-align: center;
+  padding: 4%;
+}
+.topPage .topMain {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.topPage .topMain h1 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+}
+.topPage .topMain p {
+  font-size: 3rem;
+}
+.middlePage {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.middlePage h2 {
+  font-size: 3rem;
+  margin: 2% 0;
+}
+.middlePage p {
+  font-size: 2rem;
+}
+.middlePage .middleLeft {
+  width: 50%;
+}
+.middlePage .middleRight {
+  width: 50%;
+}

@@ -54,7 +54,91 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
 // My code 
+html {
+	font-size: 62.5%;
+}
+
+.flexIt(){
+	display: flex;
+}
+@h2Size: 3rem;
+@pSize: 2rem;
+
+body {
+	width: 800px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+header{
+	.flexIt();
+	justify-content: center;
+
+		nav {
+			background: #2d2e2e;
+			width: 100%;
+	
+			.flexIt();
+			justify-content: space-around;
+
+				a{
+					color: white;
+					font-size: 2rem;
+					text-decoration: none;
+					padding: 2% 0;
+				} // end of a tag
+		} //end of nav tag
+} //end of header tag
+
+
+
+.topPage {
+	max-width: 100%;
+	background-color: #d8d8d8;
+	// margin-top: 3%;
+
+		.image {
+			text-align: center;
+			padding: 4%;
+		} //.image end
+		.topMain {
+			width: 100%;
+			text-align: center;
+			padding-bottom: 3%;
+
+				h1 {
+					font-size: 4rem;
+					margin-bottom: 2%;
+				} // h1 end
+				p {
+					font-size: @h2Size;
+				}
+		}// .topMain end
+} // End of .topPage
+
+.middlePage {
+	border: 1px solid black;
+
+	.flexIt();
+	justify-content: space-between;
+
+	h2 {
+		font-size: @h2Size;
+		margin: 2% 0;
+	}
+	p {
+		font-size: @pSize;
+	}
+
+		.middleLeft{
+			width: 50%;
+
+		}// end of middleLeft
+		.middleRight {
+			width: 50%;
+		}// end of middleRight
+}
