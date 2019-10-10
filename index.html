@@ -1,12 +1,15 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- veiwport meta tag-->
 
-  <title>My Resume</title>
+  <title>Mike's Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +17,80 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="topPage">
+    <div class="image">
+      <img class="image" src="images/photo-1517694712202-14dd9538aa97.jpg" alt="main picture">
+    </div>
+    <div class="topMain">
+      <h1>Mike Searles - Web Developer</h1>
+
+      <p>I love programming and technology!</p>
+
+      <p>Contact - (330)-555-555</p>
+    </div>
+  </section>
+
+  <section class="middlePage">
+    <div class="middleLeft">
+      <h2>Listen Up...</h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nobis, ipsam fuga itaque eaque corporis
+        possimus
+        sunt dolor, ducimus voluptatum velit eveniet, placeat dignissimos quisquam quae culpa quas. Dolorem, obcaecati.
+      </p>
+    </div>
+    <div class="middleRight">
+      <h2>Stuff I'm Good At:</h2>
+      <p class="goodOne">Disc Golf</p>
+      <p class="goodTwo">Coding up UI</p>
+      <p class="goodThree">Playing lots of video games</p>
+      <p class="goodFour">Using bootstrap grid</p>
+      <p class="goodFive">Taking long naps</p>
+    </div>
+  </section>
+
+  <section class="botttomPage">
+    <h2>Work History</h2>
+    <table>
+      <tr id="exp">
+        <th>Yrs</th>
+        <th>Company</th>
+        <th>Title</th>
+        <th>Tech Used</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Apple</td>
+        <td>Software Engineer</td>
+        <td>Swift</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Microsoft</td>
+        <td>Computer Scientist</td>
+        <td>.NET</td>
+      </tr>
+      <tr>
+        <td>3</td> 
+        <td>Amazon</td>
+        <td>Dev Ops</td> 
+        <td>AWS</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>Copyright Awesomeness 2018</p>
+  </footer>
 </body>
+
 </html>
